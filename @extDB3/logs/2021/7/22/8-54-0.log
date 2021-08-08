@@ -1,0 +1,39 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.031
+extDB3: Windows Version
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 8 Cores, Setting up 6 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[08:54:05:068265 +03:00] [Thread 4876] extDB3: Config Error: Database2: No such node (Database2.IP)
+[08:54:07:845957 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT territory_name, gang_id, gang_name, capture_progress FROM territories WHERE server='1'
+[08:54:07:846513 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT COUNT(*) FROM gangbldgs WHERE owned='1' AND server='1'
+[08:54:07:876478 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:CALL selectMax
+[08:54:07:877613 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT market_array FROM market WHERE id='1'
+[08:54:07:877849 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT reset FROM market WHERE id='1'
+[08:54:07:878478 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT COUNT(*) FROM houses WHERE owned='1' AND server='1'
+[08:54:08:154904 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT CONVERT(id, char), side, classname, type, pid, alive, active, plate, color, inventory, insured, modifications, persistentPosition, persistentDirection FROM vehicles WHERE alive='1' AND (active='0' OR active='1') AND persistentServer='1' AND side='civ'
+[08:54:08:155163 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT CONVERT(id, char), side, classname, type, gang_id, alive, active, plate, color, inventory, insured, modifications, persistentPosition, persistentDirection FROM gangvehicles WHERE alive='1' AND (active='0' OR active='1') AND persistentServer='1' AND side='civ'
+[08:54:08:299772 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT DATEDIFF('2019-10-31',NOW())
+[08:54:08:299979 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT `winner_id` FROM conquests WHERE `date_started` BETWEEN date_format(NOW() - INTERVAL 1 MONTH, '%Y-%m-01') AND last_day(NOW() - INTERVAL 1 MONTH) GROUP BY `winner_id` ORDER BY COUNT(`winner_id`) DESC LIMIT 1
+[08:54:09:397180 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:select 240-FLOOR(TIME_TO_SEC(CONVERT_TZ(NOW(), 'UTC', 'US/Eastern'))/60 + 30) % 240 as time_remaining
+[08:54:09:397369 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT HOUR(CONVERT_TZ(DATE_ADD(NOW(), INTERVAL scalar NaN MINUTE), 'UTC', 'US/Eastern'))=3 as is_hard;
+[08:54:25:952716 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT last_server, last_side, TIMESTAMP(last_active), NOW(), adminlevel, warkills, current_title, developer_level, hex_icon, hex_icon_redemptions, designer_level FROM players WHERE playerid='76561199133311284'
+[08:54:46:030283 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT pos FROM houses WHERE pid='76561199133311284' AND owned='1' AND server='1' LIMIT 5
+[08:55:37:900675 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT last_server, last_side, TIMESTAMP(last_active), NOW(), adminlevel, warkills, current_title, developer_level, hex_icon, hex_icon_redemptions, designer_level FROM players WHERE playerid='76561199133311284'
+[09:01:54:922539 +03:00] [Thread 4876] extDB3: Error Unknown Protocol: 179  Input String: 2:179:SELECT pos FROM houses WHERE pid='76561199133311284' AND owned='1' AND server='1' LIMIT 5
